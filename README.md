@@ -1,3 +1,3 @@
-# arogcd-vault-plugin-demo
+# demo-arogcd-vault-plugin
 
-Example Secret file for argocd-vault-plugin demo
+Example Kubernetes Secret file for argocd-vault-plugin demo
