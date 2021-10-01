@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-crd
+data:
+  game.properties: |
+    Selects a field of the pod: supports metadata.name, metadata.namespace,
+    `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName,
+    spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.    
+  some-credential: <path:avp/data/test2#credential>
