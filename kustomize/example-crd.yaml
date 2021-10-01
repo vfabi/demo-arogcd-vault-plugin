@@ -1,0 +1,17 @@
+kind: CustomResourceDefinition
+apiVersion: v1
+metadata:
+  name: example-crd
+  annotations: {}
+  # Notice, no `avp.kuberenetes.io/path` annotation here
+type: Opaque
+fieldRef:
+  # So, <KEY> is NOT a placeholder
+  description: 'Selects a field of
+    the pod: supports metadata.name,
+    metadata.namespace, `metadata.labels[''<KEY>'']`,
+    `metadata.annotations[''<KEY>'']`,
+    spec.nodeName, spec.serviceAccountName,
+    status.hostIP, status.podIP, status.podIPs.'
+  # But, THIS is still a placeholder
+  some-credential: <path:avp/data/test2#credential>
