@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: example-crd
+  name: example-configmap
 data:
   game.properties: |
     Selects a field of the pod: supports metadata.name, metadata.namespace,
